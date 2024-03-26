@@ -22,7 +22,7 @@ jobs:
           aws-secret-access-key: ${{ secrets.SECRET_ACCESS_KEY }}
           aws-region: us-east-1
       - name: Deploy static site to S3 bucket
-        run: aws s3 sync . s3://workflow-actions --delete
+        run: aws s3 sync . s3://workflow-actions1 --delete
           
         
   
